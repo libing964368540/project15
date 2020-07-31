@@ -1,0 +1,38 @@
+<!-- <swiper indicator-dots="true">
+  <block wx:for="{{imgs}}" wx:for-index="index">
+    <swiper-item class="swiper-items">
+      <image class="swiper-image" src="{{item}}"></image>
+      <button class="button-img" bindtap="start" wx:if="{{index == imgs.length - 1}}">立即体验</button>
+    </swiper-item>
+  </block>
+</swiper> -->
+<view>
+<swiper current="{{current}}">
+  <block>
+    <swiper-item class="swiper-items" catchtouchmove='catchTouchMove'>
+           <view class="sl_title" style="font-size:28px">加入班级</view>   
+          <userfrom1 from1="{{show_1_content}}" bind:myevent="onGetCode"></userfrom1>
+          <button class="weui-btn {{show_1_content.show_1?'':'sl_active'}}" type="primary" bindtap='next1'>继续</button>
+         <iModal title='登录并授权' content='申请获取以下权限获得你的公开信息（昵称、头像）' bindSuccess='onSuccess' open_type="getUserInfo"></iModal>
+
+    </swiper-item>
+     <swiper-item class="swiper-items" catchtouchmove='catchTouchMove'>
+          <view class="sl_title" style="font-size:28px">{{show_2_content.show_2_title}}</view>         
+          <userfrom2 from2="{{show_2_content}}" bind:myevent="onGetCode2"></userfrom2>
+         <button class="weui-btn {{show_2_content.show_2?'':'sl_active'}}" type="primary" bindtap='next2'>继续</button>
+    </swiper-item>
+     <swiper-item class="swiper-items" catchtouchmove='catchTouchMove'>
+           <view class="sl_title" style="font-size:28px">请输入您的地区</view>    
+          <userfrom3 from3="{{show_3_content}}" bind:myevent="onGetCode3"></userfrom3>
+          <button class="weui-btn {{show_3_content.show_3?'':'sl_active'}}" type="primary" bindtap='next3'>继续</button>
+         <view class="nextStep" bindtap="next">跳过</view> 
+    </swiper-item>
+     <swiper-item class="swiper-items" catchtouchmove='catchTouchMove'>
+          <view class="sl_title" style="font-size:28px">完善个人信息</view>    
+           <uesrfrom4 from4="{{show_4_content}}" bind:myevent="onGetCode4"></uesrfrom4>
+          <button class="weui-btn" type="primary" bindtap="start">好了</button>
+          <view class="nextStep" bindtap="next" bindtap="start">跳过</view> 
+    </swiper-item>
+  </block>
+</swiper>
+</view>

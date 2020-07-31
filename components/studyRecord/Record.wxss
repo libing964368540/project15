@@ -1,0 +1,16 @@
+/* components/studyRecord/Record.wxss */
+@import "../../icons/iconss.wxss";
+@import "../../weui.wxss";
+.sl_addressWrap{
+  padding: 20px 0;
+  border-bottom:1px solid #f3f5f8; 
+}
+.AddressTitle,.AddressContent,.sl_work{
+  font-size:14px;
+}
+.workType{
+  font-size: 17px;
+}
+.flex{
+  display: flex;
+}

@@ -1,0 +1,44 @@
+/**index.wxss**/
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */
+.weui-cells:after,.weui-cells:before{
+ border:none;
+}
+.weui-cell{
+  padding:15px 0;
+  border-bottom:1px solid #f3f5f8;  
+}
+.weui-cell:before{
+  border:none;
+}
+.sl_loading{
+  color: #929292;
+  line-height: 50px;
+  font-size: 12px;
+}
+.sl_jumpList{
+  padding: 15px 0;
+  border-bottom: 1px solid #f3f5f8;
+}
+.sl_jumpList .sl_jumpList_title{
+  fong-size:18px;
+  color: #101010;
+}

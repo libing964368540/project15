@@ -1,0 +1,4 @@
+<!--pages/oldFriendsAll/index.wxml-->
+<view class='sl_container'>
+       <news news="{{oldSchoolFriend}}"></news>
+</view>

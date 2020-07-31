@@ -1,0 +1,9 @@
+{
+ "usingComponents": {
+  "news": "/components/NewestActivity/index"
+},
+"navigationBarTitleText": "最新动态",
+"enablePullDownRefresh": true,
+"backgroundColor": "",
+"backgroundTextStyle": "dark"
+}

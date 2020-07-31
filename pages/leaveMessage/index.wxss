@@ -1,0 +1,26 @@
+/* pages/leaveMessage/index.wxss */
+.section{
+width:100%;
+height:220rpx;
+}
+.message1{
+ width:100%;
+ height:210rpx;
+ font-size: 16px;
+ margin-top:10px; 
+ border-bottom:1px solid #f3f5f8;
+}
+
+.title{
+  border-bottom:1px solid #f3f5f8;
+  padding: 10px 0;
+  margin-bottom:20px;
+}
+.weui-btn{
+  background: #2196f3!important;
+}
+.weui-btn.sl_active{
+  background: #cccccc!important;
+  outline: none;
+  border: none;
+}

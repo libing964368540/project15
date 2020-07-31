@@ -1,0 +1,76 @@
+<view class='sl_container'>
+  <!-- 标题 -->
+  <view class="sl_title" style="font-size:28px">发现校友</view>
+  <!-- 搜索 -->
+  <!-- <view class="searchWrap flex">
+            <text class="linkIcon" style="font-size:20px;color:#929292">search</text>
+            <text class="searchTip">输入组织名称</text>
+      </view>  -->
+  <view class="page__bd" style="padding:10px 0 15px">
+    <view class="weui-search-bar">
+      <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+          <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+          <input type="text" class="weui-search-bar__input" placeholder="输入校友姓名" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+          <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+            <icon type="clear" size="14"></icon>
+          </view>
+        </view>
+        <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+          <icon class="weui-icon-search" type="search" size="14"></icon>
+          <view class="weui-search-bar__text">输入校友姓名</view>
+        </label>
+      </view>
+      <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+    </view>
+    <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+
+
+
+  <!-- 可能认识的人 -->
+ <view hidden="{{inputShowed}}">
+  <view class='sl_content'>
+    <view class="sl_Friend_title">可能认识的校友</view>
+    <news news="{{oldSchoolFriend}}"></news>
+  </view>
+  <view class="sl_loading">
+    <navigator url="../oldFriendsAll/index" class="weui-cell weui-cell_access" hover-class="weui-cell_active" style="padding:5px 0 10px">查看更多可能认识的校友...</navigator>
+  </view>
+  <!-- 所在地区的校友 -->
+  <view class='sl_content'>
+    <view class="sl_Friend_title flex" style="flex-direction: row;justify-content: space-between;">
+      <view>所在地区的校友</view>
+      <view class="flex">
+        <text class="linkIcon" style="font-size:16px">place</text>
+        <view style="font-weight:normal;">浙江.杭州.余杭</view>
+      </view>
+    </view>
+    <news news="{{oldSchoolFriendForArea}}"></news>
+  </view>
+  <view class="sl_loading">
+    <navigator url="../FriendAllForArea/index" class="weui-cell weui-cell_access" hover-class="weui-cell_active" style="padding:5px 0 10px">查看更多这个地区的校友...</navigator>
+  </view>
+ </view>  
+</view>

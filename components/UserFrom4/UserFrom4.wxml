@@ -1,0 +1,20 @@
+<!--components/UserFrom4/Userfrom4.wxml-->
+<view class="sl_from">
+      <!-- 照相功能 -->
+      <view class="imgWrap">
+            <view class="UpFile" bindtap="chooseImage" >
+                 <text class="linkIcon tutu">add_a_photo</text>
+                 <image src="{{images}}" mode="aspectFill" class="imgs"></image>
+            </view>
+      </view>
+      <view class="section">
+            <view class="sl_select">
+                <input placeholder="手机号码" type="tel" bindblur="phone"/>
+            </view>
+      </view>
+      <view class="section">
+            <view class="sl_select">
+                   <input placeholder="电子邮箱" bindblur="email"/>
+            </view>
+      </view>
+ </view>     

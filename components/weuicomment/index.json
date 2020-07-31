@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "leaveword-tree": "/components/weuicomment/index"
+  }
+}

@@ -1,0 +1,13 @@
+<!--pages/leaveMessage/index.wxml-->
+<view class='sl_container'>
+ <form bindsubmit='FormSubmit'>
+ <view class='section'>
+ <textarea class='message1' type='text' placeholder="请留言(60字以内)" maxlength='80' style="word- wrap:break-word" bindinput='bindTextAreaChange' value="{{message}}"></textarea>
+</view>
+<button bindtap='submit' style="width:50%;margin-top:50px;" class="weui-btn {{flag?'':'sl_active'}}" type="primary">留言</button>
+</form>
+<view style="padding-top:30px;" hidden="{{tree.length==0}}">
+      <view class="title">我的留言</view>
+      <leaveword-tree tree="{{tree}}"></leaveword-tree>
+</view>
+</view>

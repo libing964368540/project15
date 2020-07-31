@@ -1,0 +1,72 @@
+/* components/NewestActivity/index.wxss */
+.sl_wrap{
+  padding: 15px 0;
+  border-bottom:1px solid #f3f5f8;  
+}
+.sl_list{
+  position: relative;
+  margin-bottom:15px; 
+}
+.sl_list .sl_time{
+  position: absolute;
+  top:0;
+  right: 0;
+  font-size: 14px;
+  color: #929292;
+}
+.sl_listImg{
+  width: 48px;
+  height: 48px;
+  background: #999999;
+  margin-right: 10px;
+  border-radius:50%; 
+}
+.sl_name{
+  font-size: 18px;
+  color: #101010;
+}
+.sl_classgrade{
+  font-size: 14px;
+  color: #929292;
+}
+.sl_tip{
+  color: #101010;
+  font-size:14px;
+}
+.flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.sl_group{
+  position: relative;
+}
+.sl_group .sl_guanzhu{
+  position: absolute;
+  top:0;
+  right: 0;
+  font-size: 16px;
+  color: #2196f3;
+  border:1px solid #2196f3;
+  padding: 0 10px;
+  line-height: 35px;
+  border-radius:5px;
+}
+.sl_group .sl_time{
+  position: absolute;
+  top:0;
+  right: 0;
+  font-size: 16px;
+}
+.sl_group .sl_listImg{
+  width: 50px;
+  height: 50px;
+  /* background: #999999; */
+  margin-right: 10px;
+  border-radius: 0;
+  border:none;
+}
+.sl_group .sl_name{
+  font-size: 17px;
+  color: #101010;
+}

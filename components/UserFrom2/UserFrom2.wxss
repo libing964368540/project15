@@ -1,0 +1,17 @@
+/* components/UserFrom2/Userfrom2.wxss */
+.sl_from{
+  padding-top:20px; 
+}
+.sl_select{
+  padding: 15px 0;
+  color: #929292;
+  border-bottom:1px solid #f3f5f8; 
+  margin-bottom: 10px;
+}
+.sl_switch{
+  font-size: 14px;
+  color: #2196f3;
+}
+.sl_select input{
+  color: #101010;
+}

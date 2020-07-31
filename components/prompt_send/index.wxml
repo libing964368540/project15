@@ -1,0 +1,16 @@
+<!--components/prompt_send/index.wxml-->
+<view class="release" hidden="{{!releaseFocus}}">
+<input class="text"
+placeholder-class="input_null"
+fixed="true"
+maxlength="-1"
+show-confirm-bar="false"
+cursor-spacing="15"
+auto-height="true"
+focus="{{releaseFocus}}"
+placeholder="回复 {{releaseName}}"
+bindblur="showPrompt" value="{{message}}"
+bindinput='bindTextAreaChange'
+adjust-position="true" bindconfirm="_send" data-value="{{message}}"confirm-type="send"></input>
+<view class="submit" bindtap="_send" data-value="{{message}}">发送</view>
+</view>

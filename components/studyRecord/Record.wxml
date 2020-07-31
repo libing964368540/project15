@@ -1,0 +1,27 @@
+<!--components/studyRecord/Record.wxml-->
+<!-- start -->
+<view wx:for="{{record}}" wx:key="{{item.id}}">
+  <view class="sl_addressWrap">
+    <view class="flex" style="flex-direction: row;justify-content: space-between;margin-bottom:15px;">
+      <view class="AddressTitle">{{item.date}}</view>
+      <view class="flex">
+        <text class="linkIcon" style="font-size:16px">place</text>
+        <view class="AddressContent">{{item.address}}</view>
+      </view>
+    </view>
+    <view class="flex sl_work" style="flex-direction: row;justify-content: space-between;">
+      <view>
+        <view class="workType">
+              <view style="margin-right:10px;">{{item.education}}</view>
+              <view>{{item.degree}}</view>
+        </view>
+        <view class="flex">
+          <view style="margin-right:10px;color:#929292;">{{item.company}}</view>
+          <view style="color:#929292;">{{item.post}}</view>
+        </view>
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+  </view>
+</view>
+<!-- end -->

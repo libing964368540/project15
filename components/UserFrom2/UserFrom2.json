@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+      "userfrom2": "/components/UserFrom2/UserFrom2"
+  }
+}

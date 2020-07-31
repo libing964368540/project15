@@ -1,0 +1,55 @@
+<!--pages/study_history/index.wxml-->
+<view class='sl_container'>
+      <!-- 标题 -->
+      <view class="flex" style="flex-direction: row;justify-content: space-between;">
+            <text class="sl_title" style="font-size:28px">教育经历</text>
+            <text class="linkIcon" style="margin-right:0;font-size:30px;" >add</text>
+      </view>
+      <!-- 教育经历列表 -->
+      <view class="workHistoryWrap">
+          <record record="{{studyHistory}}"></record>
+           <!-- start -->
+         <!-- <view class="sl_addressWrap">
+            <view class="flex" style="flex-direction: row;justify-content: space-between;margin-bottom:15px;">
+                  <view class="AddressTitle">2014.9 至  2018.6</view>
+                <view class="flex">
+                  <text class="linkIcon" style="font-size:16px">place</text>
+                  <view class="AddressContent">浙江.杭州.余杭</view>
+                </view>
+            </view>
+            <view class="flex sl_work" style="flex-direction: row;justify-content: space-between;">
+                 <view>
+                       <view class="workType">本科学习  学士</view>
+                       <view class="flex">
+                              <view style="margin-right:10px;color:#929292;">浙江科技学院</view>
+                              <view style="color:#929292;">信息与电子工程学院</view>
+                       </view>
+                 </view>
+                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+       </view> -->
+       <!-- end -->
+       <!-- <view class="sl_addressWrap">
+            <view class="flex" style="flex-direction: row;justify-content: space-between;margin-bottom:15px;">
+                  <view class="AddressTitle">2012.6 至 2014.8</view>
+                <view class="flex">
+                  <text class="linkIcon" style="font-size:16px">place</text>
+                  <view class="AddressContent">浙江.杭州.余杭</view>
+                </view>
+            </view>
+            <view class="flex sl_work" style="flex-direction: row;justify-content: space-between;">
+                 <view>
+                       <view class="workType">职业高中学习</view>
+                       <view class="flex">
+                              <view style="margin-right:10px;color:#929292;">杭州电子信息职业学校</view>
+                              <view style="color:#929292;">高三计1班</view>
+                       </view>
+                 </view>
+                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+       </view> -->
+    </view>
+      
+</view>
+
+

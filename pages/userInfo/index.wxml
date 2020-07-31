@@ -1,0 +1,18 @@
+<!--pages/userInfo/index.wxml-->
+<view class="sl_container">
+      <view class="flex" style="justify-content: space-between">
+         <view>
+               <view class="sl_title">陈晓露</view>
+                <view class="sl_edit">编辑你的最新动态</view>
+         </view>
+            <view class="headImgWrap">
+                <image src="../../img/head.jpg" class="img"></image>
+           </view>
+      </view>
+      <!-- info -->
+      <view>
+           <view class="sl_info sl_sex">女</view>
+           <view class="sl_info sl_grate">1995</view>
+           <view class="sl_info sl_classgrade">计算机1班</view>
+      </view>
+</view>

@@ -1,0 +1,40 @@
+<!--components/UserFrom2/Userfrom2.wxml-->
+<view class="sl_from">
+    <!-- 工作状态 -->
+    <view hidden="{{sl_state===true}}">
+      <view class="section">
+            <view class="sl_select">
+                   <input placeholder="最近担任的职位" bindblur="workPost"/>
+            </view>
+      </view>
+       <view class="section">
+            <view class="sl_select">
+                   <input placeholder="最近就职的公司" bindblur="workName"/>
+            </view>
+      </view>
+       <text class="sl_switch" bindtap="changeState">我目前还是学生</text>
+    </view>
+    <!-- 学生状态 -->
+    <view hidden="{{sl_state!=true}}">
+          <view class="section">
+             <view class="sl_select">
+                   <input placeholder="学校" bindblur="school"/>
+            </view>
+         </view>
+         <view style="display: flex;flex-direction: row;justify-content: space-between;">
+              <picker bindchange="bindPickerChangeBefore" value="{{indexBefore}}" range="{{array}}" style="width:40%" >
+                     <view class="picker sl_select">
+                             <text wx:if="{{indexBefore>-1}}" style="color:#101010;">{{array[indexBefore]}}</text> 
+                             <text  wx:else>入学年份</text>      
+                      </view>
+             </picker>
+              <picker bindchange="bindPickerChangeAfter" value="{{indexAfter}}" range="{{array}}"style="width:40%">
+                       <view class="picker sl_select">
+                                 <text wx:if="{{indexAfter>-1}}" style="color:#101010;">{{array[indexAfter]}}</text> 
+                                 <text  wx:else>毕业年份</text>  
+                       </view>
+             </picker>
+         </view>
+          <text class="sl_switch" bindtap="changeState">我不是学生</text>
+      </view>
+</view>

@@ -1,0 +1,19 @@
+<!--pages/leaveMessageForMe/index.wxml-->
+<view class='sl_container'>
+       <leaveword-tree tree="{{tree}}"
+         bind:myevent="bindReply" 
+        ></leaveword-tree>
+  <!-- <prompt id="prompt" 
+    title="留言回复" 
+    btn_certain="发送"
+    bind:getInput="getInput" 
+    bind:cancel="cancel"
+    bind:confirm="confirm">
+</prompt>
+<button bindtap="showPrompt">点击弹出prompt</button> -->
+<!-- <view class="talk" bindtap="bindReply" >回复</view> -->
+  <prompt_send id="prompt_send" 
+     bind:bindsend="bindsend"
+     ></prompt_send>
+</view>
+

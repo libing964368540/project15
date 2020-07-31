@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "z-tree": "/components/tree/z-tree"
+  },
+  "navigationBarTitleText": "校友录"
+}

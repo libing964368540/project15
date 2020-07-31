@@ -1,0 +1,16 @@
+/* pages/AddWorkHistory/index.wxss */
+.sl_from{
+   padding-top:10px;
+}
+.sl_select{
+  padding: 15px 0 8px;
+  color: #929292;
+  border-bottom:1px solid #f3f5f8; 
+  margin-bottom: 10px;
+}
+.sl_select input{
+  color: #101010;
+}
+.weui-btn{
+  background: #2196f3!important;
+}

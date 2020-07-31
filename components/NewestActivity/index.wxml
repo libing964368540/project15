@@ -1,0 +1,51 @@
+<!--components/NewestActivity/index.wxml-->
+<!-- <text>components/NewestActivity/index.wxml</text> -->
+<view wx:for="{{newest}}" wx:key="{{item.id}}" >
+  <!-- 最新消息 -->
+  <view class='sl_wrap' wx:if="{{item.type==0}}">
+    <view class='sl_list flex'>
+      <image class='sl_listImg flex-y-center' src="{{item.headImg}}" bindtap="getFollow" data-name="{{item.name}}"></image>
+      <view>
+        <view class='sl_name'>{{item.name}}</view>
+        <view class='sl_classgrade'>{{item.classgrade}}</view>
+      </view>
+      <view class="sl_time">{{item.date}}</view>
+    </view>
+    <view class="sl_tip">{{item.tip}}</view>
+  </view>
+  <!--可能认识的校友 -->
+  <view class='sl_wrap' wx:if="{{item.type==1}}" style="border-bottom:none;padding:10px 0">
+    <view class='sl_list flex' style="margin-bottom:0">
+      <image class='sl_listImg flex-y-center' src="{{item.headImg}}" bindtap="getFollow" data-name="{{item.name}}"></image>
+      <view>
+        <view class='sl_name'>{{item.name}}</view>
+        <view class='sl_classgrade'>{{item.classgrade}}</view>
+      </view>
+      <view class="sl_time">{{item.date}}</view>
+    </view>
+  </view>
+  <!-- 所在地区的校友 -->
+  <view class='sl_wrap' wx:if="{{item.type==2}}" style="border-bottom:none;padding:10px 0">
+    <view class='sl_list flex'  style="margin-bottom:0">
+      <image class='sl_listImg flex-y-center' src="{{item.headImg}}" bindtap="getFollow" data-name="{{item.name}}"></image>
+      <view>
+        <view class='sl_name'>{{item.name}}</view>
+        <view class='sl_classgrade'>{{item.classgrade}}</view>
+      </view>
+      <view class="sl_time">{{item.date}}</view>
+    </view>
+    <view class="sl_tip">{{item.tip}}</view>
+  </view>
+  <!-- 可能感兴趣的组织 -->
+  <view class='sl_wrap'  wx:if="{{item.type==3}}" style="border-bottom:none;padding:10px 0">
+             <view class='sl_list flex sl_group'style="margin-bottom:0">
+                  <image class='sl_listImg flex-y-center' src="{{item.img}}"></image>
+                  <view>
+                       <view class='sl_name'>{{item.name}}</view>
+                       <view class='sl_classgrade'>{{item.classgrade}}</view>
+                  </view> 
+                  <view class="sl_guanzhu">关注</view>    
+             </view>
+  </view>
+  <!--  -->
+</view>

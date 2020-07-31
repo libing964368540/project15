@@ -1,0 +1,4 @@
+<!--pages/groupLike/index.wxml-->
+<view class='sl_container'>
+       <news news="{{group}}"></news>
+</view>

@@ -1,0 +1,7 @@
+<!--pages/newsAll/index.wxml-->
+<view class='sl_container'>
+      <view class="sl_title" style="font-size:28px">最新动态</view>
+      <view>
+             <news news="{{Newest}}"></news>
+      </view>
+</view>

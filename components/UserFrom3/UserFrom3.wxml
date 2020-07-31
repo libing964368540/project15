@@ -1,0 +1,41 @@
+<!--components/UserFrom3/Userfrom3.wxml-->
+<view class="sl_from">
+      <view class="section">
+            <view class="sl_select">
+                   <input placeholder="国家/地区" bindblur="Country" value="中国" disabled="true"/>
+            </view>
+      </view>
+      <view class="section">
+            <picker bindchange="bindPickerChange_sheng" value="{{index}}" range="{{addressData}}" mode = "selector">
+                  <view class="picker sl_select">
+                         <text wx:if="{{index>-1}}" style="color:#101010;">{{addressData[index]}}</text> 
+                         <text  wx:else>省/自治区/直辖市</text> 
+                   </view>
+            </picker>
+            <!-- <view class="sl_select">
+                   <input placeholder="省/自治区/直辖市" bindblur="province"/>
+            </view> -->
+      </view>
+      <view class="section">
+             <picker bindchange="bindPickerChange_city" value="{{cityIndex}}" range="{{cityData}}" mode = "selector">
+                  <view class="picker sl_select">
+                         <text wx:if="{{cityIndex>-1}}" style="color:#101010;">{{cityData[cityIndex]}}</text> 
+                         <text  wx:else>市/区</text> 
+                   </view>
+            </picker>
+            <!-- <view class="sl_select">
+                   <input placeholder="市/区" bindblur="city"/>
+            </view> -->
+      </view>
+      <view class="section">
+            <picker bindchange="bindPickerChange_area" value="{{areaIndex}}" range="{{areaData}}" mode = "selector">
+                  <view class="picker sl_select">
+                         <text wx:if="{{areaIndex>-1}}" style="color:#101010;">{{areaData[areaIndex]}}</text> 
+                         <text  wx:else>区/县</text> 
+                   </view>
+            </picker>
+            <!-- <view class="sl_select">
+                   <input placeholder="区/县" bindblur="area"/>
+            </view> -->
+      </view>
+</view>

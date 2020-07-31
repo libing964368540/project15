@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+      "leaveword-tree": "/components/weuicomment/index"
+  },
+  "navigationBarTitleText": "留言"
+}

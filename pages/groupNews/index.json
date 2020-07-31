@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "组织动态",
+  "usingComponents": {
+     "z-tree": "/components/tree/z-tree"
+  }
+}

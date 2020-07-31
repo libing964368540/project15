@@ -1,0 +1,91 @@
+/* pages/Company/index.wxss */
+.sl_wrap{
+  padding:15px 0; 
+}
+.sl_Friend_title{
+  font-size: 14px;
+  padding-top:20px; 
+  padding-bottom:10px;
+  font-weight: bold; 
+}
+.sl_list{
+  position: relative;
+}
+.sl_list .sl_guanzhu{
+  position: absolute;
+  top:0;
+  right: 0;
+  font-size: 16px;
+  color: #2196f3;
+  border:1px solid #2196f3;
+  padding: 0 10px;
+  line-height: 35px;
+  border-radius:5px;
+}
+.sl_list .sl_time{
+  position: absolute;
+  top:0;
+  right: 0;
+  font-size: 16px;
+}
+.sl_listImg{
+  width: 50px;
+  height: 50px;
+  background: #999999;
+  margin-right: 10px;
+}
+.sl_name{
+  font-size: 17px;
+  color: #101010;
+}
+.sl_classgrade{
+  font-size: 14px;
+  color: #929292;
+}
+.sl_tip{
+  color: #101010;
+  font-size:14px;
+}
+.sl_loading{
+  color: #929292;
+  line-height: 50px;
+  font-size: 12px;
+}
+.searchWrap{
+  background: #f3f5f8;
+  color: #888888;
+  font-size: 14px;
+  height: 30px;
+  border-radius: 5px;
+  padding-left:10px;
+  box-sizing: border-box; 
+}
+.searchTip{
+  vertical-align: middle;
+  line-height: 30px;
+}
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
+.weui-search-bar {
+  padding: 0;
+  border: none;
+  background: #ffffff;
+  height: 30px;
+}
+.weui-search-bar__form {
+    background: #f3f5f8;
+}
+.weui-search-bar__label{
+  background: #f3f5f8;
+}
+.weui-search-bar__cancel-btn{
+  color: #2196f3;
+}

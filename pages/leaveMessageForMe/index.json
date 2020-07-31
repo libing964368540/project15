@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "prompt_send":"/components/prompt_send/index",
+    "prompt": "/components/prompt/index",
+    "leaveword-tree": "/components/weuicomment/index"
+  },
+  "navigationBarTitleText": "我的留言板",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "",
+  "backgroundTextStyle": "dark"
+}

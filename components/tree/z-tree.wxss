@@ -1,0 +1,52 @@
+/* components/tree/tree.wxss */
+@import "../../icons/iconss.wxss";
+.item {
+  padding-left: 20px;
+}
+.flex{
+  	display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tree_name{
+  line-height: 35px;
+  font-size: 17px;
+}
+.tree_name_wrap{
+  padding: 5px 0;
+   border-bottom: 1px solid #f3f5f8;
+   position: relative;
+}
+.tree_name_wrap.active{
+  border-bottom:none;
+    padding: 7px 0;
+}
+.linkIcon{
+  color: #929292;
+  margin-right:0; 
+}
+.itemImg{
+  width: 40px;
+  height: 40px;
+  border-radius:50%; 
+  overflow: hidden;
+  margin-right: 15px;
+}
+.itemImg.active{
+   width: 33px;
+  height: 33px;
+ margin-top:5px; 
+}
+.itemImg .imgs{
+  width: 100%;
+  height: 100%;
+}
+.workYear{
+  position: absolute;
+  top:10px;
+  right: 0;
+  font-size: 13px;
+  color: #929292;
+}

@@ -1,0 +1,4 @@
+<!--pages/groupNews/index.wxml-->
+<view class='sl_container'>
+       <z-tree tree="{{tree}}"></z-tree>
+</view>

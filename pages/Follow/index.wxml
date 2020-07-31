@@ -1,0 +1,28 @@
+<!--pages/chatRoom/index.wxml-->
+<view class="sl_container">
+       <view class="sl_head">
+       <view bindtap="jump">
+              <!-- 姓名 -->
+              <view class="sl_name">{{title}}</view>
+               <!-- 编辑最新动态 -->
+             <view class="flex">
+                    <view class="sl_edit" style="margin-right:10px;padding-top:5px">编辑你的最新动态</view>
+                     <text class="linkIcon" style="font-size:18px">mode_edit</text>
+             </view>  
+       </view>  
+       <!-- 关注、参与的数量 -->
+       <view class="flex">
+             <view class="sl_guangzhu" catchtap="getFollowlist" data-name="关注">45</view>
+             <view class="sl_fensi" catchtap="getFollowlist" data-name="粉丝">118</view>
+             <view class="sl_group" catchtap="getFollowlist" data-name="组织">12</view>
+             <view class="sl_leaveMassage" catchtap="LeaveWord" data-name="留言">8</view>
+       </view>
+       <!-- 用户头像 -->
+       <view class="headImgWrap" catchtap="chooseImage">
+             <image background-size="cover" src="{{images}}" class="headImgsrc"></image>
+       </view>
+    </view>
+</view>
+
+
+

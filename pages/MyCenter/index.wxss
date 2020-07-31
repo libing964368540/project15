@@ -1,0 +1,107 @@
+/* pages/MyCenter/index.wxss */
+.sl_name{
+  font-size: 28px;
+  color: #101010;
+  font-weight: bold;
+  margin-bottom:5px; 
+}
+.sl_head{
+  padding:10px 0 40px;
+  border-bottom:1px solid #f3f5f8; 
+  position: relative;
+}
+.sl_edit{
+  font-size: 17px;
+  color: #929292;
+  margin-bottom:20px; 
+}
+.sl_guangzhu,.sl_fensi,.sl_group,.sl_leaveMassage{
+    font-size: 14px;
+  color: #101010;
+  position: relative;
+  width: 30px;
+  text-align: center;
+  margin-right: 50px;
+
+}
+.sl_guangzhu::before{
+  content: '关注';
+  color: #929292;
+  position: absolute;
+  bottom: -25px;
+  font-size: 14px;
+  left: 0;
+}
+
+.sl_fensi::before{
+  content: '粉丝';
+  color: #929292;
+  position: absolute;
+  bottom: -25px;
+  font-size: 14px;
+  left: 0;
+}
+
+.sl_group::before{
+  content: '组织';
+  color: #929292;
+  position: absolute;
+  bottom: -25px;
+  font-size: 14px;
+  left: 0;
+}
+.sl_leaveMassage::before{
+   content: '留言';
+  color: #929292;
+  position: absolute;
+  bottom: -25px;
+  font-size: 14px;
+  left: 0;
+}
+.sl_type_wrap{
+  padding: 20px 0;
+  border-bottom:1px solid #f3f5f8; 
+}
+.sl_type_wrap .sl_type_content{
+  color: #101010;
+  font-size: 17px;
+}
+.headImgWrap{
+  position: absolute;
+  top:5px;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.headImgWrap .headImgsrc{
+  width: 100%;
+  height: 100%;
+   position: absolute;
+   top:0;
+} 
+.sl_addressWrap{
+  padding: 20px 0;
+  border-bottom:1px solid #f3f5f8; 
+}
+.AddressTitle{
+  font-size:14px;
+  font-weight: bold;
+}
+.AddressContent,.sl_work{
+  font-size: 16px;
+}
+.weui-cells:after,.weui-cells:before{
+ border:none;
+}
+.weui-cell{
+  padding:15px 0;
+  border-bottom:1px solid #f3f5f8;  
+}
+.weui-cell:last-child{
+  border:none;
+}
+.weui-cell:before{
+  border:none;
+}

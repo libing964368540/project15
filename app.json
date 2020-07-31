@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/Guide/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/find/index",
+    "pages/Company/index",
+    "pages/MyCenter/index",
+    "pages/work_history/index",
+    "pages/study_history/index",
+    "pages/schoolTree/index",
+    "pages/newsAll/index",
+    "pages/oldFriendsAll/index",
+    "pages/FriendAllForArea/index",
+    "pages/groupNews/index",
+    "pages/groupLike/index",
+    "pages/AddWorkHistory/index",
+    "pages/userInfo/index",
+    "pages/chatList/index",
+    "pages/Follow/index",
+    "pages/leaveMessage/index",
+    "pages/leaveMessageForMe/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#929292",
+    "selectedColor": "#101010",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/shouye.png",
+        "selectedIconPath": "img/shouye.png"
+      },
+      {
+        "pagePath": "pages/find/index",
+        "text": "发现",
+        "iconPath": "img/find.png",
+        "selectedIconPath": "img/find.png"
+      },
+      {
+        "pagePath": "pages/Company/index",
+        "text": "组织",
+        "iconPath": "img/Company.png",
+        "selectedIconPath": "img/Company.png"
+      },
+      {
+        "pagePath": "pages/MyCenter/index",
+        "text": "我的",
+        "iconPath": "img/myCenter.png",
+        "selectedIconPath": "img/myCenter.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "news": "/components/NewestActivity/index"
+  }
+}

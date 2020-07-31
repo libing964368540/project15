@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "z-tree": "/components/tree/z-tree",
+    "news": "/components/NewestActivity/index"
+  },
+  "navigationBarTitleText": "组织"
+}

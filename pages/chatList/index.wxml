@@ -1,0 +1,20 @@
+<!--pages/chatList/index.wxml-->
+<view class="sl_container">
+      <!-- 消息列表 -->
+      <view class="flex chatListWrap" wx:for="{{chatlist}}" wx:key="{{item.id}}" bindtap="GetIntoRoom" data-name='{{item.name}}'>
+            <!-- 头像 -->
+            <view class="chat_headsrc"><image src="{{item.headImg}}" class="chat_headImg"></image></view>
+            <view class="flex-1" style="border-bottom:1px solid #f3f5f8;padding-bottom:10px;">
+                  <!-- 姓名和时间 -->
+                  <view class="flex just-center" style="padding-bottom:5px;">
+                        <text class="chatName">{{item.name}}</text>
+                        <text class="chatTime">{{item.time}}</text>
+                  </view>
+                  <!-- 内容  和  条数 -->
+                  <view class="flex just-center">
+                        <text class="chatTip">{{item.chatTip}}</text>
+                  </view>
+            </view>
+      </view>
+      
+</view>

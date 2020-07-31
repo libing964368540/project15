@@ -1,0 +1,4 @@
+<!--pages/FriendAllForArea/index.wxml-->
+<view class='sl_container'>
+       <news news="{{oldSchoolFriendForArea}}"></news>
+</view>

@@ -1,0 +1,30 @@
+<!--components/tree/z-tree.wxml-->
+<block wx:for="{{treeData}}" wx:key="{{item.id}}">
+  <view catchtap='toggle' data-id="{{item.id}}" data-isFolder="{{item.isFolder}}" data-url='{{item.url}}' data-name="{{item.name}}">
+    <view class="flex tree_name_wrap {{item.srcUrl?'active':''}}">
+           <view wx:if="{{item.school}}" class="flex">
+                 <view class="itemImg active"><image src="{{item.srcUrl}}" class="imgs"></image></view>
+                 <view style="padding-left:7px">
+                       <view style="font-size:16px">{{item.name}}</view>
+                       <view  style="font-size:13px;color:#929292">{{item.school}}</view>
+                 </view>
+                 <view class="workYear" wx:if="{{item.workYear}}">{{item.workYear}}</view>
+           </view>
+           <view  wx:else class="flex">
+                  <view class="itemImg" wx:if="{{item.srcUrl}}"><image src="{{item.srcUrl}}" class="imgs"></image></view>
+                  <view class="tree_name">{{item.name}}</view>
+           </view>
+           <view class="flex"> 
+                  <text wx:if="{{item.total}}" style="font-size:14px;color:#929292;line-height:40px;">{{item.total}}</text>
+                  <text class="linkIcon"wx:if="{{item.isFolder && !item.isOpen}}">keyboard_arrow_right</text>
+                   <text class="linkIcon"wx:if="{{item.isFolder && item.isOpen}}">keyboard_arrow_down</text>
+           </view> 
+           <!-- <text class="linkIcon"wx:if="{{item.isFolder && !item.isOpen}}">keyboard_arrow_up</text>
+           <text class="linkIcon"wx:if="{{item.isFolder && item.isOpen}}">keyboard_arrow_down</text> -->
+           <!-- <text wx:if="{{item.isFolder}}">{{item.isOpen?'[-]':'[+]'}}</text> -->
+    </view>
+    <view wx:if="{{item.isFolder && item.isOpen}}" class="{{item.srcUrl?'':'item'}}" style="padding-top:10px;">
+      <z-tree tree="{{item.children}}"></z-tree>
+    </view>
+  </view>
+</block>

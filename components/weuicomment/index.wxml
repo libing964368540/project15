@@ -1,0 +1,23 @@
+<!--components/weuicomment/index.wxml-->
+<!-- 留言板列表组件 -->
+<block wx:for="{{treeData}}" wx:key="{{item.id}}">
+<view class="flex {{item.leaveword.length?'active':'marBottom10'}}" >
+      <!-- 用户头像 -->
+      <view class="imgWrap"><image src="{{item.headsrc}}" class="imgsrc"></image></view>
+      <!-- 内容 -->
+      <view class="flex-1 flex just-center">
+            <view>
+                  <view style="font-size:30rpx;color:#929292;">{{item.nickname}}</view>
+                  <view style="font-size:30rpx;color:#101010;">{{item.content}}</view>
+                  <view  style="font-size:25rpx;color:#929292;">{{item.time}}</view>
+            </view>
+           
+                  <view style="font-size:14px;color:#ff4747;flex-basis:50px;text-align:right;align-self: center;" wx:if="{{userInfo.nickName==item.nickname}}">删除</view>
+                  <view style="font-size:14px;color:#2196f3;flex-basis:50px;text-align:right;align-self: center;" wx:else bindtap="_send" data-index="{{index}}">回复</view>
+          
+      </view>
+</view>
+ <view style="padding-top:10px;padding-left:100rpx;">
+            <leaveword-tree tree="{{item.leaveword}}"></leaveword-tree>
+      </view>     
+</block>

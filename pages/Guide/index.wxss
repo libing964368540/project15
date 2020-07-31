@@ -1,0 +1,30 @@
+/* pages/Guide/index.wxss */
+swiper {
+  /*这个是绝对布局*/
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+swiper-item{
+   padding: 40rpx 40rpx;
+   box-sizing: border-box;
+}
+.weui-btn{
+  position: absolute;
+  width: 90%;
+  bottom: 45px;
+  background: #2196f3!important;
+}
+.weui-btn.sl_active{
+  background: #cccccc!important;
+  outline: none;
+  border: none;
+}
+.nextStep{
+  position: absolute;
+  width: 90%;
+  bottom: 15px;
+  text-align: center;
+  color:#929292;
+}
+

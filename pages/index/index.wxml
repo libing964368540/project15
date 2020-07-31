@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class='sl_container'>
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <view class="sl_title" style="font-size:28px">最新动态</view>
+  <!--最新动态内容-->
+  <view class='sl_content'>
+        <news news="{{Newest}}"></news>
+  </view>
+  
+  <view class="sl_loading">  
+         <navigator url="../newsAll/index" class="weui-cell weui-cell_access" hover-class="weui-cell_active" style="padding:5px 0 10px;border:none;">查看更多动态...</navigator>
+         </view>
+  <!--带标题的跳转列表  -->
+          <view class="weui-cells weui-cells_after-title">
+            <navigator url="../schoolTree/index" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <text class="linkIcon">folder_shared</text>
+                <view class="weui-cell__bd">查看完整的校友录</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <!-- <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <text class="linkIcon">place</text>
+                <view class="weui-cell__bd">查看和我同一地区的校友</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <text class="linkIcon">group</text>
+                <view class="weui-cell__bd">查看和我同一组织的校友</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator> -->
+        </view>
+</view>

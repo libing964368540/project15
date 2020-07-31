@@ -1,0 +1,40 @@
+<!--components/UserFrom1/UserFrom4.wxml-->
+ <!-- <text class="sl_title" style="font-size:28px;color:#101010;padding-bottom:30px;">加入班级</text> -->
+<view class="sl_from">
+     <view class="section">
+       <picker bindchange="bindPickerChange_year" value="{{index}}" range="{{array}}" mode = "selector">
+            <view class="picker sl_select">
+                  <text wx:if="{{index>-1}}" style="color:#101010;">{{array[index]}}</text> 
+                  <text  wx:else>选择毕业年份</text> 
+            </view>
+       </picker>
+     </view>
+      <view class="section">
+       <picker bindchange="bindPickerChange_group" value="{{group_index}}" range="{{group_arr}}" range-key="name">
+            <view class="picker sl_select">
+                  <text wx:if="{{group_index>-1}}" style="color:#101010;">{{group_arr[group_index].name}}</text> 
+                  <text wx:else>选择专业部</text>  
+            </view>
+       </picker>
+     </view>
+      <view class="section">
+       <picker bindchange="bindPickerChange_classgrade" value="{{classgrade_index}}" range="{{group_arr[group_index].child}}" range-key="name">
+            <view class="picker sl_select">
+                  <text wx:if="{{classgrade_index>-1}}" style="color:#101010;">{{group_arr[group_index].child[classgrade_index].name}}</text> 
+                  <text  wx:else>选择毕业班级</text>  
+            </view>
+       </picker>
+     </view>
+       <view class="section" style="display: flex;flex-direction: row;justify-content: space-between;">
+            <view class="sl_select">
+                   <input placeholder="填写真实姓名" bindblur="fillname"/>
+            </view>
+            <picker bindchange="bindPickerChange_sex" value="{{sex_index}}" range="{{sex_arr}}">
+            <view class="picker sl_select" style="width:130px">
+                  <text wx:if="{{sex_index>-1}}" style="color:#101010;">{{sex_arr[sex_index]}}</text> 
+                  <text  wx:else>选择性别</text> 
+            </view>
+       </picker>
+      </view> 
+</view>
+

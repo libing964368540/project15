@@ -1,0 +1,80 @@
+<view class="sl_container"> 
+    <view class="sl_head">
+       <view bindtap="jump">
+              <!-- 姓名 -->
+              <view class="sl_name">陈晓露</view>
+               <!-- 编辑最新动态 -->
+             <view class="flex">
+                    <view class="sl_edit" style="margin-right:10px;padding-top:5px">编辑你的最新动态</view>
+                     <text class="linkIcon" style="font-size:18px">mode_edit</text>
+             </view>  
+       </view>  
+       <!-- 关注、参与的数量 -->
+       <view class="flex">
+             <view class="sl_guangzhu" catchtap="getFollowlist" data-name="关注">45</view>
+             <view class="sl_fensi" catchtap="getFollowlist" data-name="粉丝">118</view>
+             <view class="sl_group" catchtap="getFollowlist" data-name="组织">12</view>
+             <view class="sl_leaveMassage" catchtap="LeaveWord" data-name="留言">8</view>
+       </view>
+       <!-- 用户头像 -->
+       <view class="headImgWrap" catchtap="chooseImage">
+             <image background-size="cover" src="{{images}}" class="headImgsrc"></image>
+       </view>
+    </view>
+       <!-- 当前经历 -->
+       <view class="sl_addressWrap">
+            <view class="flex" style="flex-direction: row;justify-content: space-between;margin-bottom:15px;">
+                  <view class="AddressTitle">工作经历</view>
+            </view>
+          <navigator url="../work_history/index" style="width:100%;height:100%;">
+            <view class="flex sl_work" style="flex-direction: row;justify-content: space-between;">
+                 <view>
+                       <view>数据挖掘工程师</view>
+                       <view class="flex">
+                              <view style="margin-right:10px;color:#929292;">阿里巴巴</view>
+                              <view style="color:#929292;">天猫事业部</view>
+                       </view>
+                 </view>
+                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+              </view>
+            </navigator>
+       </view>
+       <!-- 教育经历 -->
+       <view class="sl_addressWrap">
+            <view class="flex" style="flex-direction: row;justify-content: space-between;margin-bottom:15px;">
+                  <view class="AddressTitle">教育经历</view>
+            </view>
+             <navigator url="../study_history/index" style="width:100%;height:100%;">
+            <view class="flex sl_work" style="flex-direction: row;justify-content: space-between;">
+                 <view>
+                       <view>浙江科技学院</view>
+                       <view class="flex">
+                              <view style="margin-right:10px;color:#929292;">学士</view>
+                              <view style="color:#929292;">软件工程</view>
+                       </view>
+                 </view>
+                   <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </view>
+             </navigator>
+       </view>
+         <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <text class="linkIcon" style="margin-right:20px">build</text>
+                <view class="weui-cell__bd">专业技能</view>
+            </navigator>
+        <view class="weui-cells weui-cells_after-title">
+             <!-- 个人成就 -->
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <text class="linkIcon" style="margin-right:20px">stars</text>
+                <view class="weui-cell__bd">个人成就</view>
+            </navigator>
+             <!-- 联系方式 -->
+             <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <text class="linkIcon" style="margin-right:20px">call</text>
+                <view class="weui-cell__bd">联系方式</view>
+            </navigator>
+             <!-- 更多 -->
+            
+        </view>
+      
+
+</view>

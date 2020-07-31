@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "教育经历",
+  "usingComponents": {
+    "record": "/components/studyRecord/Record"
+  }
+}
